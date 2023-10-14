@@ -13,7 +13,7 @@ using an ardunio Uno and cheap 433mHz TX module (as pictured below)
  - PREPARATION
    - Be safe - Power all things down first!!
    - On the Arduino
-     - Wire up the 433 mHZ module - Use pin3 for the TX signal   
+     - Wire up the 433 mHZ module - Use a dupont wire to link Arduino pin 3 (for the TX signal) going to the TX Module input pin  
    - On the receiver:
      - Wire up the output light
      - Wire up mains power
