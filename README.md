@@ -1,4 +1,8 @@
 # IQ-group-pir-wireless-arduino-TX
-Spoof a PIR message to trigger an IQ Group mains controller that is in a box like this:
+Spoof a PIR message to trigger an IQ Group mains controller that looks like this
+<img src="images/P1140936.jpg" alt="IQ Group 240V Mains controller"/>
 
-<img src="images/iq1.jpg" alt="IQ Group Reciever package"/>
+and comes in a box like this:
+
+
+<img src="images/iq1.jpg" alt="IQ Group box"/>
