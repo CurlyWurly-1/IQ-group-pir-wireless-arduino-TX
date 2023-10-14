@@ -3,11 +3,11 @@ Use an arduino UNO and a cheap 433 MhZ TX module to spoof a triggering RF signal
 
 <img src="images/P1140936.jpg" alt="IQ Group 240V Mains controller"/>
 
-Once you have wired up the arduino you can make the receiver learn the code as follows
+To make this work, do the following 
  - PREPARATION
-   - All things are powered down
+   - Be safe - Power all things down first!!
    - On the Arduino
-     - Wire up the 433 mHZ module   
+     - Wire up the 433 mHZ module - Use pin3 for the TX signal   
    - On the receiver:
      - Wire up the output light
      - Wire up mains power
