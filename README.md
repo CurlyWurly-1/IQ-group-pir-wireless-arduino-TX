@@ -1,5 +1,5 @@
 # IQ-group-pir-wireless-arduino-TX
-Spoof a PIR message using an arduino UNO and a cheap 433 MhZ TX module, to trigger the mains switch in an IQ Group mains controller as pictured in the picture below
+Use an arduino UNO and a cheap 433 MhZ TX module to spoof a triggering RF signal that switches the mains switch in an IQ Group mains controller (as pictured below)
 
 <img src="images/P1140936.jpg" alt="IQ Group 240V Mains controller"/>
 
