@@ -31,4 +31,4 @@ using an ardunio Uno and cheap 433mHz TX module (as pictured below)
      - Power it up - it will start transmitting every 30 seconds
      - Check the receiver LED. If the code has been accepted and stored, the receiver LED will go off and all is done for that sensor.
 
-N.B. It is possible for the reciever to recognise more than one code - You would just press the Receiver PROGRAM button again for 1-2 seconds, and then transmit from the other device. However, bear in mind it is not necessary to repeat code learning if all devices use the same code (as seen in the transmit sketch).
+N.B. It is possible for the receiver to recognise separate codes - To do this you would press the Receiver PROGRAM button again for 1-2 seconds to make the LED light up, and then transmit from the other device. However, bear in mind that if all devices use the same sketch TX "code" (as seen in the transmit sketch INO file), you do not need to do a repeat learning!
