@@ -3,6 +3,10 @@ Use an arduino UNO and a cheap 433 MhZ TX module to spoof a triggering RF signal
 
 <img src="images/P1140936.jpg" alt="IQ Group 240V Mains controller"/>
 
+using an ardunio Uno and cheap 433mHz TX module (as pictured below) 
+<img src="images/txmod.jpg" alt="Ard_tx"/>
+
+
 To make this work, do the following 
  - PREPARATION
    - Be safe - Power all things down first!!
