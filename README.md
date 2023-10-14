@@ -15,20 +15,36 @@ using an ardunio Uno and cheap 433mHz TX module (as pictured below)
    - On the Arduino
      - Wire up the 433 mHZ module - Use a dupont wire to link Arduino pin 3 (for the TX signal) going to the TX Module input pin  
    - On the receiver:
-     - Wire up the output light
-     - Wire up mains power
+     - Wire up mains input power
+     - Gently turn the duration pot all the way counter clockwise - It is to be set to "Test" - This means that once the receiver is triggered, the receiver relay clicks on for about 5 seconds, and then it clicks off - you can hear it happening.  
 
- - CODE RESET (Optional) - Only do this if you want start from scratch
+ - CODE RESET - Do this if you want start from scratch
    - On the Receiver 
-     - Power it up
-     - Press the Receiver's PROGRAM button for 5 seconds
-         
+     - Power it up - If codes have already been stored, the LED will light up solid. If there are no codes (e.g. its the very first time it is powered up, and it is empty). The light may start up in "Programming mode" which is indicated by the LED slowly pulsing on and off 
+     - Press the Receiver's PROGRAM button for 5 seconds to make sure it resets. The receiver will either do one of the following:
+       - Pulse very quickly for a bit (indicating it has emptied code)
+       - it doesn't do anything (indicating no code was previously stored) and just continues blinking slowly on and off. 
+                
  - CODE LEARNING
    - On the Receiver 
-     - Power it up
-     - Press the Receiver's PROGRAM button for 1-2 seconds (If you press for longer, you may reset all codes - see previous section) The receiver LED will go ON, indicating it is in PROGRAM MODE, and will remain ON for 5 minutes  
+     - Power it up. If it is for the first time, the led will gently pulse on and off.
+     - If the LED is on solid, press the Receiver's PROGRAM button for 1-2 seconds until the led starts gently pulsing on and off (If you press for longer, you may reset all codes - see previous section)
    - On the Arduino
-     - Power it up - it will start transmitting every 30 seconds
-     - Check the receiver LED. If the code has been accepted and stored, the receiver LED will go off and all is done for that sensor.
+     - Power it up - it will start transmitting every 15 seconds. 
+   - On the Receiver
+     - Check that the LED is now solid. If is is solid, then the code has been stored. If the LED is not solid, then TX signal has not been recognised.
+   - On the Arduino (only continue with this step if in the above step, the LED is solid and no longer flashing")
+     - Power it off
+   - On the Reciever
+     - Power it off
+     - Power it on - The LED should now show as solid ON
+   - On the Arduino
+     - Power it on.
 
-N.B. It is possible for the receiver to recognise separate codes - To do this you would press the Receiver PROGRAM button again for 1-2 seconds to make the LED light up, and then transmit from the other device. However, bear in mind that if all devices use the same sketch TX "code" (as seen in the transmit sketch INO file), you do not need to do a repeat learning!
+N.B. If all is setup and working OK, the relay will click on every 15 seconds, and stay on for about 5 seconds. This will repeat until you stop the Arduino from sending TX signals!
+
+N.B. You will notice that when the relay is on, the LED is flashing slowly. Whenever the relay is off, The LED is solid on.
+
+N.B. You will notice that you can change the "ON" time on the receiver by turning the receiver pot 
+
+N.B. It is possible for the receiver to recognise separate codes. However, bear in mind that if all devices use the same sketch TX "code" (as seen in the transmit sketch INO file), you do not need to do it!
