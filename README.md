@@ -34,7 +34,7 @@ using an ardunio Uno and cheap 433mHz TX module (as pictured below)
  - CODE LEARNING
    - On the IQ Receiver 
      - Power it up. If it is for the first time, the led will slowly blink on and off.
-     - If the LED is on solid, press the Receiver's PROGRAM button for 1-2 seconds until the led starts slowly blinking on and off (If you press for longer, you may reset all codes - see previous section)
+     - If the LED is on solid, press the Receiver's PROGRAM button for 1-2 seconds until the led starts slowly blinking on and off (Do not press for longer otherwise you will trigger a reset of all codes - See previous section)
    - On the Arduino
      - Power it up - it will start transmitting every 15 seconds.
      - Wait for a cykle of at least 2 TX bursts (about 30 seconds)
