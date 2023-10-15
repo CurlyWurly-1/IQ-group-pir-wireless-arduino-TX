@@ -39,7 +39,7 @@ using an ardunio Uno and cheap 433mHz TX module (as pictured below)
      - Power it up - it will start transmitting every 15 seconds.
      - Wait until you hear the relay clicking on and off (after about 30 seconds)
    - On the IQ Receiver
-     - Check that "programming mode" has completed - This is signified by a repeating LED pattern where the LED becomes solid for about 10 seconds, and then blinks for 5 seconds.  N.B. Note that if the LED ever becomes solid, it is indicating that the code has been stored, and if you then see it blinking, it no longer means that the IQ reciever is in "programming mode", it means that the relay is triggered ON - A solid LED means that the relay is off.
+     - Check that "programming mode" has completed - This is signified by a repeating LED pattern where the LED becomes solid for about 10 seconds, and then blinks for 5 seconds.  N.B. Note that if the LED ever becomes solid, it is indicating that the code has been stored, and that the IQ Receiver is now in "normal operation" mode where if you now see the LED blinking, it means that the relay is triggered ON with a solid LED meaning that the relay is OFF.
        
 N.B. If all is setup and working OK, the relay will click on every 15 seconds, and stay on for about 5 seconds. This will repeat until you stop the Arduino from sending TX signals!
 
