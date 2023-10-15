@@ -13,7 +13,7 @@ using an ardunio Uno and cheap 433mHz TX module (as pictured below)
  - PREPARATION
    - Be safe - Power all things down first!!
    - On the Arduino
-     - Wire up the 433 mHZ module - Use a dupont male to demale wires to link
+     - Wire up the 433 mHZ module - Use dupont male to female wires to link:
        - Arduino 5V  to TX Module +V  
        - Arduino 0V  to TX Module ground  
        - Arduino pin 3 (TX signal) to the TX Module input pin  
