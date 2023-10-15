@@ -43,7 +43,7 @@ using an ardunio Uno and cheap 433mHz TX module (as pictured below)
        
 N.B. If all is setup and working OK, the relay will click on every 15 seconds, and stay on for about 5 seconds. This will repeat until you stop the Arduino from sending TX signals!
 
-N.B. You will notice that when the relay is on, the LED is flashing slowly. Whenever the relay is off, The LED is solid on.
+N.B. You will notice that when the relay is triggered ON, the LED is flashing slowly. Whenever the relay is off (the untriggered state), The LED is solid on.
 
 N.B. You will notice that you can change the "ON" time on the receiver by turning the receiver pot 
 
