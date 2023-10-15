@@ -17,12 +17,12 @@ using an ardunio Uno and cheap 433mHz TX module (as pictured below)
        - Arduino 5V  to TX Module +V  
        - Arduino 0V  to TX Module ground  
        - Arduino pin 3 (TX signal) to the TX Module input pin  
-   - On the receiver:
+   - On the IQ receiver:
      - Wire up mains input power
      - Gently turn the duration pot all the way counter clockwise - It is to be set to "Test" - This means that once the receiver is triggered, the receiver relay clicks on for about 5 seconds, and then it clicks off - you can hear it happening.  
 
  - CODE RESET - Do this if you want start from scratch
-   - On the Receiver 
+   - On the IQ Receiver 
      - Power it up - If codes have already been stored, the LED will light up solid. If there are no codes (e.g. its the very first time it is powered up, and it is empty). The light may start up in "Programming mode" which is indicated by the LED slowly pulsing on and off
      - Wait for about a minute for the receiver internals to settle down
      - Press the Receiver's PROGRAM button for 5 seconds to make sure it resets. The receiver will either do one of the following:
@@ -30,12 +30,12 @@ using an ardunio Uno and cheap 433mHz TX module (as pictured below)
        - it doesn't do anything (indicating no code was previously stored) and just continues blinking slowly on and off. 
                 
  - CODE LEARNING
-   - On the Receiver 
+   - On the IQ Receiver 
      - Power it up. If it is for the first time, the led will gently pulse on and off.
      - If the LED is on solid, press the Receiver's PROGRAM button for 1-2 seconds until the led starts gently pulsing on and off (If you press for longer, you may reset all codes - see previous section)
    - On the Arduino
      - Power it up - it will start transmitting every 15 seconds. 
-   - On the Receiver
+   - On the IQ Receiver
      - Check that the LED is now solid. If is is solid, then the code has been stored. If the LED is not solid, then TX signal has not been recognised.
      - Wait until the relay starts clicking. This means that all is setup and working OK. 
 
