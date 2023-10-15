@@ -47,6 +47,6 @@ N.B. You will notice that when in "normal operation" and the relay is triggered 
 
 N.B. You will notice that you can change the "ON" time on the receiver by turning the receiver pot 
 
-N.B. If you ever power cycle the receiver off and on, wait for a bout a minute before trying to do things. It seems the Receiver needs some time to settle down and stabilise before it can work OK 
+N.B. If you ever power cycle the IQ receiver off and on, wait for about 10 seconds before trying to do things. It seems the Receiver needs some time to settle down and stabilise before it can work OK 
 
-N.B. It is possible for the receiver to recognise separate codes. However, bear in mind that if all devices use the same sketch TX "code" (as seen in the transmit sketch INO file), you do not need to do it!
+N.B. It is possible for the IQ receiver to recognise separate codes. However, bear in mind that if all devices use the same sketch TX "code" (as seen in the transmit sketch INO file), you do not need to do it!
