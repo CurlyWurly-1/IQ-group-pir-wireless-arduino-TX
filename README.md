@@ -13,7 +13,10 @@ using an ardunio Uno and cheap 433mHz TX module (as pictured below)
  - PREPARATION
    - Be safe - Power all things down first!!
    - On the Arduino
-     - Wire up the 433 mHZ module - Use a dupont wire to link Arduino pin 3 (for the TX signal) going to the TX Module input pin  
+     - Wire up the 433 mHZ module - Use a dupont male to demale wires to link
+       - Arduino 5V  to TX Module +V  
+       - Arduino 0V  to TX Module ground  
+       - Arduino pin 3 (TX signal) to the TX Module input pin  
    - On the receiver:
      - Wire up mains input power
      - Gently turn the duration pot all the way counter clockwise - It is to be set to "Test" - This means that once the receiver is triggered, the receiver relay clicks on for about 5 seconds, and then it clicks off - you can hear it happening.  
