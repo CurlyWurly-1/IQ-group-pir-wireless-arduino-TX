@@ -19,7 +19,7 @@ using an ardunio Uno and cheap 433mHz TX module (as pictured below)
        - Arduino pin 3 (TX signal) to the TX Module input pin  
    - On the IQ receiver:
      - Wire up mains input power
-     - Gently turn the duration pot all the way counter clockwise - It is to be set to "Test" - This means that once the receiver is setup succesfully and the Arduino sketch is running, you will hear the IQ receiver relay clicking on every 15 seconds and staying on for about 5 seconds. 10 seconds later, it will click on again and this will repeat while the sketch is running (but only after the code has been learnt - see below on how to do that).  
+     - Gently turn the duration pot all the way counter clockwise - It is to be set to "Test"  N.B. This setup means that once the receiver is setup succesfully and the Arduino sketch is running, you will hear the IQ receiver relay clicking on every 15 seconds and staying on for about 5 seconds. 10 seconds later, it will click on again and this will repeat while the sketch is running (but only after the code has been learnt - see below on how to do that).  
 
  - CODE RESET - Do this if you want start from scratch
    - On the IQ Receiver 
