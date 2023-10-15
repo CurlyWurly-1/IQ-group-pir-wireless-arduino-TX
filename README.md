@@ -27,7 +27,7 @@ using an ardunio Uno and cheap 433mHz TX module (as pictured below)
        - If codes have already been stored, the LED will light up solid.
        - If there are no codes (e.g. its the very first time it has ever been powered up), the LED will slowly blink on and off, which indicates that the IQ receiver is already in "Programming mode".
      - Wait for about 10 seconds - for the receiver internals to settle down
-     - Press the Receiver's PROGRAM button for 5 seconds to get into "Programming mode" - The receiver will either do one of the following:
+     - Press the Receiver's PROGRAM button for 5 seconds to make sure that the IQ receiver is reset empty - The receiver will either do one of the following two things:
        - Pulse very quickly for a bit (indicating it has emptied code) and then slowly blink on and off 
        - it doesn't do anything (indicating no code was previously stored) and just continues blinking slowly on and off. 
                 
