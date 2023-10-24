@@ -50,3 +50,6 @@ N.B. You will notice that you can change the "ON" time on the receiver by turnin
 N.B. If you ever power cycle the IQ receiver off and on, wait for about 10 seconds before trying to do things. It seems the Receiver needs some time to settle down and stabilise before it can work OK 
 
 N.B. It is possible for the IQ receiver to recognise separate codes. However, bear in mind that if all devices use the same sketch TX "code" (as seen in the transmit sketch INO file), you do not need to do it!
+
+# Analysis of Pulse train
+<img src="images/PIR Pulse train.jpg" alt="Pulse Train 1"/>
