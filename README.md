@@ -19,7 +19,7 @@ using an ardunio Uno and cheap 433mHz TX module (as pictured below)
        - Arduino pin 3 (TX signal) to the TX Module input pin  
    - On the IQ receiver:
      - Wire up mains input power
-     - Gently turn the duration pot all the way counter clockwise - It is to be set to "Test"  N.B. This setup means that once the receiver is setup successfully and the Arduino sketch is running, you will hear the IQ receiver relay clicking on every 15 seconds and staying on for about 5 seconds. 10 seconds later, it will click on again and this will repeat while the sketch is running (but only after the code has been learnt - see below on how to do that).  
+     - Gently turn the duration pot all the way counter clockwise - For initial testing, it is to be set to "Test" for the shortest "on" time. 
 
  - CODE RESET - Do this if you want start from scratch
    - On the IQ Receiver 
@@ -36,14 +36,14 @@ using an ardunio Uno and cheap 433mHz TX module (as pictured below)
      - Power it up. If it is for the first time, the LED will slowly blink on and off.
      - If the LED is on solid, press the Receiver's PROGRAM button for 1-2 seconds until the led starts slowly blinking on and off (Do not press for longer otherwise you will trigger a reset of all codes - See previous section)
    - On the Arduino
-     - Power it up - it will start transmitting every 15 seconds.
+     - Power it up - it will start transmitting every 10 seconds.
      - Wait until you hear the relay clicking on and off (after about 30 seconds)
    - On the IQ Receiver
-     - Check that "programming mode" has completed - This is signified by a repeating LED pattern where the LED becomes solid for about 10 seconds, and then blinks for 5 seconds.  N.B. Note that if the LED ever becomes solid, it is indicating that the code has been stored, and that the IQ Receiver is now in "normal operation" mode where if you now see the LED blinking, it means that the relay is triggered ON with a solid LED meaning that the relay is OFF.
-       
-N.B. If all is setup and working OK, the relay will click on every 15 seconds, and stay on for about 5 seconds. This will repeat until you stop the Arduino from sending TX signals!
+     - Check that "programming mode" has completed which is signified by the LED being solid "ON". This indicates that the code has been stored, and that the IQ Receiver is now in "normal operation" mode. From now on, if you see the LED blinking, it means that the IQ reciever has been triggered by a RF signal and the relay is either triggered solid ON (from a LIVE RF signal) or it is slowly switching on and off (from a TESTING RF signal). The 2 different types of RF signal ("LIVE" and "TESTING") are documented in the Arduino code.
+            
+N.B. If all is setup and working OK, the relay will click on every 10 seconds, and stay on for about 5 seconds. This will repeat until you stop the Arduino from sending TX signals!
 
-N.B. You will notice that when in "normal operation" and the relay is triggered ON, the LED is flashing slowly. When the relay is off (the untriggered state), The LED is solid on.
+N.B. The "untriggered" state is indicated by the LED being "ON".
 
 N.B. You will notice that you can change the "ON" time on the receiver by turning the receiver pot 
 
