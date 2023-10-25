@@ -1,5 +1,5 @@
 # IQ-group-pir-wireless-arduino-TX
-Spoof a triggering RF signal to switch the mains switch in an IQ Group mains controller (as pictured below)
+Spoof a triggering 433 mHz RF signal to switch the mains switch in an IQ Group mains controller (as pictured below)
 
 <img src="images/P1140936.jpg" alt="IQ Group 240V Mains controller"/>
 
