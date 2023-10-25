@@ -23,9 +23,15 @@ INFORMATION
 #define txPin       3       //Output to RF TX module
 
 
-//int IQcode[] = {10,21,754,1,1,1,1,1,1,1,4,1,5,1,4,1,4,1,5,1,6,1,4,1,7,1,4,1,7,1,3,1,5,1,5,1,5,1,5,1,4,1,5,1,27};
-// Testing pulsetrain - makes the relay flash on and off 
-int IQcode[] = {12,21,730,1,1,1,1,1,1,1,4,1,3,1,6,1,5,1,7,1,5,1,3,1,6,1,3,1,8,1,3,1,5,1,5,1,5,1,5,1,5,1,5,1,27};
+// TESTING - Use this for testing - it triggers the relay to pulse on and off slowly  - Notice that the 6 values at the end of the string is "1,5,1,5,1,27"      
+int IQcodeT[] = {12,21,730,1,1,1,1,1,1,1,4,1,3,1,6,1,5,1,7,1,5,1,3,1,6,1,3,1,8,1,3,1,5,1,5,1,5,1,5,1,5,1,5,1,27};
+// LIVE 1  - Use this to trigger the relay solid on, then go off after timeout - Notice that the 6 values at the end of the string is "1,4,1,5,1,27" instead of "1,5,1,5,1,27"    
+int IQcode1[] = {12,21,730,1,1,1,1,1,1,1,4,1,3,1,6,1,5,1,7,1,5,1,3,1,6,1,3,1,8,1,3,1,5,1,5,1,5,1,5,1,4,1,5,1,27};
+// LIVE 2  - Use this to trigger the relay solid on, then go off after timeout - Notice that the 6 values at the end of the string is "1,4,1,5,1,27" instead of "1,5,1,5,1,27"    
+int IQcode2[]   = {12,21,730,1,1,1,1,1,1,1,4,1,4,1,4,1,6,1,6,1,5,1,6,1,5,1,4,1,6,1,3,1,5,1,5,1,5,1,5,1,4,1,5,1,27};
+
+// Set to LIVE 1
+int IQcode[] = IQcode1[]
 
 void tx(int code);  
 
